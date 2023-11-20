@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="br.ufal.aracomp.cosmos.emprestimo.spec.prov.IManager"/>
+    <fullyQualifiedTypeName name="br.ufal.aracomp.cosmos.emprestimo.spec.prov.IEmprestimoOps"/>
+    <fullyQualifiedTypeName name="br.ufal.aracomp.cosmos.emprestimo.spec.dt.DTUsuario"/>
+    <fullyQualifiedTypeName name="br.ufal.aracomp.cosmos.emprestimo.spec.req.ILimiteReq"/>
+    <fullyQualifiedTypeName name="br.ufal.aracomp.cosmos.limite.spec.dt.DTCliente"/>
+    <fullyQualifiedTypeName name="br.ufal.aracomp.cosmos.limite.spec.prov.IManager"/>
+    <fullyQualifiedTypeName name="br.ufal.aracomp.cosmos.emprestimo.impl.ComponentFactory"/>
+    <fullyQualifiedTypeName name="br.ufal.aracomp.cosmos.limite.impl.ComponentFactory"/>
+    <fullyQualifiedTypeName name="br.ufal.aracomp.cosmos.limite.spec.prov.ILimiteOps"/>
+    <fullyQualifiedTypeName name="br.cesmac.connectors.SimpleConnector"/>
+</qualifiedTypeNameHistroy>

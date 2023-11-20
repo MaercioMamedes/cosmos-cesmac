@@ -1,0 +1,5 @@
+package br.cesmac.connectors;
+
+public class SimpleConnector {
+
+}

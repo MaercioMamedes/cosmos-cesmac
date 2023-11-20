@@ -1,0 +1,18 @@
+package br.cesmac.confArch;
+
+import br.ufal.aracomp.cosmos.emprestimo.impl.ComponentFactory;
+import br.ufal.aracomp.cosmos.emprestimo.spec.dt.DTUsuario;
+import br.ufal.aracomp.cosmos.emprestimo.spec.prov.IEmprestimoOps;
+import br.ufal.aracomp.cosmos.emprestimo.spec.prov.IManager;
+
+public class Main {
+	public static void main(String[] args) {
+		IManager compEmp = ComponentFactory.createInstance();
+		
+		// executar interface provida
+		DTUsuario user = new DTUsuario("10000");
+		IEmprestimoOps empOps = (IEmprestimoOps)compEmp.getProvidedInterface("IEmprestimoOps");
+		Double valor = empOps.liberarEmprestimoAutomatico(user);
+		System.out.println(valor);
+	}
+}
