@@ -15,7 +15,6 @@ public class Main {
 		// instance Ilimte
 		
 		br.ufal.aracomp.cosmos.limite.spec.prov.IManager compLimite =  br.ufal.aracomp.cosmos.limite.impl.ComponentFactory.createInstance();
-		
 		// required interface
 		
 		ILimiteOps limiteOps = (ILimiteOps) compLimite.getProvidedInterface("ILimiteOps");

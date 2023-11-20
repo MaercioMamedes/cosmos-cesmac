@@ -10,4 +10,5 @@
     <fullyQualifiedTypeName name="br.ufal.aracomp.cosmos.limite.impl.ComponentFactory"/>
     <fullyQualifiedTypeName name="br.ufal.aracomp.cosmos.limite.spec.prov.ILimiteOps"/>
     <fullyQualifiedTypeName name="br.cesmac.connectors.SimpleConnector"/>
+    <fullyQualifiedTypeName name="br.cesmac.connectors.ConectorSimples"/>
 </qualifiedTypeNameHistroy>
