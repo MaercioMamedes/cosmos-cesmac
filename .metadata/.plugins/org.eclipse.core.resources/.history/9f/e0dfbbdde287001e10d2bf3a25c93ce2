@@ -12,31 +12,29 @@ import br.ufal.aracomp.cosmos.limite.spec.prov.ILimiteOps;
 
 public class Main {
 	public static void main(String[] args) {
+		IManager compEmp = ComponentFactory.createInstance();
 		
-		// Instanciando Interface Limite(Componente Limite)
-		br.ufal.aracomp.cosmos.limite.spec.prov.IManager compLimite = br.ufal.aracomp.cosmos.limite.impl.ComponentFactory.createInstance();
+		// instance Ilimte
 		
-		// Intanciando interface provida do Componente Limite
+		br.ufal.aracomp.cosmos.limite.spec.prov.IManager compLimite =  br.ufal.aracomp.cosmos.limite.impl.ComponentFactory.createInstance();
+		// required interface
+		
 		ILimiteOps limiteOps = (ILimiteOps) compLimite.getProvidedInterface("ILimiteOps");
 		
-		// conector ILimite(provida) -> IEmprestimo(requerida)
+		// conector
+		
 		ConectorSimples conn = new ConectorSimples(limiteOps);
 		
-		// instanciando Interface Emprestimo(Componente Empréstimo)
-		IManager compEmp = ComponentFactory.createInstance();
 				
-		// Estabelencendo coesão entre os componentes a partir do conector
 		compEmp.setRequiredInterface("ILimiteReq", conn);
 		
-		// instanciando interface Provida do Componente Empréstimo
-		IEmprestimoOps empOps = (IEmprestimoOps)compEmp.getProvidedInterface("IEmprestimoOps");
-		
 		// Instanciando casos de uso
+		
 		String salario1 = "1000";
 		String salario2 = "1001";
 		String salario3 = "1002";
 		String salario4 = "1003";
-		String salario5 = "1010,50";
+		String salario5 = "1010.50";
 		
 		DTUsuario usuario1 = new DTUsuario(salario1);
 		DTUsuario usuario2 = new DTUsuario(salario2);
@@ -44,7 +42,10 @@ public class Main {
 		DTUsuario usuario4 = new DTUsuario(salario4);
 		DTUsuario usuario5 = new DTUsuario(salario5);
 		
-		// criando lista de usuários		
+
+		
+		// criando lista de usuários
+		
 		ArrayList<DTUsuario> listaUsuarios = new ArrayList<>();
 		
 		listaUsuarios.add(usuario1);
@@ -53,12 +54,16 @@ public class Main {
 		listaUsuarios.add(usuario4);
 		listaUsuarios.add(usuario5);
 		
-
-		// Calculando empréstimos liberadoss para os usuários
+		// executar interface provida
+		
+		IEmprestimoOps empOps = (IEmprestimoOps)compEmp.getProvidedInterface("IEmprestimoOps");
+		
+		// calculando Limite dos usuários
+		
 		Integer cont = 1;
 		for (DTUsuario usuario: listaUsuarios) {
 			Double valor = empOps.liberarEmprestimoAutomatico(usuario);
-			System.out.println("Empréstimo liberado para o usuario"+cont+": " + valor);
+			System.out.println("Limite do usuario"+cont+": " + valor);
 			cont++;
 		}
 		

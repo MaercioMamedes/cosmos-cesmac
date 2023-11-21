@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="br.ufal.aracomp.cosmos.emprestimo.spec.prov.IManager"/>
     <fullyQualifiedTypeName name="br.ufal.aracomp.cosmos.emprestimo.spec.prov.IEmprestimoOps"/>
-    <fullyQualifiedTypeName name="br.ufal.aracomp.cosmos.emprestimo.spec.dt.DTUsuario"/>
     <fullyQualifiedTypeName name="br.ufal.aracomp.cosmos.emprestimo.spec.req.ILimiteReq"/>
     <fullyQualifiedTypeName name="br.ufal.aracomp.cosmos.limite.spec.dt.DTCliente"/>
     <fullyQualifiedTypeName name="br.ufal.aracomp.cosmos.limite.spec.prov.IManager"/>
@@ -11,4 +10,8 @@
     <fullyQualifiedTypeName name="br.ufal.aracomp.cosmos.limite.spec.prov.ILimiteOps"/>
     <fullyQualifiedTypeName name="br.cesmac.connectors.SimpleConnector"/>
     <fullyQualifiedTypeName name="br.cesmac.connectors.ConectorSimples"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="br.ufal.aracomp.cosmos.emprestimo.spec.dt.DTUsuario"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
