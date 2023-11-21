@@ -9,6 +9,10 @@ Dentro do projeto raiz, temos dois componentes do software, que são nativamente
 ![](https://raw.githubusercontent.com/MaercioMamedes/cosmos-cesmac/main/docs/images/Componentes.PNG)
 
 
-### PARTE 1
+## PARTE 1
 
 ![](https://raw.githubusercontent.com/MaercioMamedes/cosmos-cesmac/main/docs/images/DiagramaDeSequencia.png)
+
+### RESULTADOS PARTE 1
+
+![](https://raw.githubusercontent.com/MaercioMamedes/cosmos-cesmac/main/docs/images/resultados.PNG)
